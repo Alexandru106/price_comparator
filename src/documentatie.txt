@@ -1,0 +1,31 @@
+Aceasta aplicatie Java simpla citeste fisiere CSV cu produse si reduceri de la mai multe magazine (Lidl, Kaufland, Profi) si ofera urmatoarele functionalitati:
+
+Compararea preturilor pentru produse identice intre magazine
+
+Afișarea reducerilor noi introduse intr-o anumita zi
+
+Afișarea celor mai mari reduceri active
+
+Setarea unor alerte de pret pentru produse (de catre utilizator)
+Functionalitati Implementate
+
+1. Citire produse din fisiere CSV
+
+Folosind CsvReader.readProducts(...), se citesc fisiere .csv care contin informatii despre produse dintr-un magazin.
+
+2. Grupare produse si comparare preturi
+
+Folosind ProductService.groupByProduct() si ProductService.comparePrices() se afiseaza preturile aceluiasi produs din mai multe magazine.
+
+3. Reduceri noi si top reduceri
+
+DiscountService.showNewDiscounts(...) afiseaza reducerile noi valabile la data curenta
+
+DiscountService.showTopDiscounts(...) sorteaza si afiseaza top N reduceri
+
+4. Alerte de pret
+
+Utilizatorul introduce din consola un nume de produs si un pret tinta
+
+PriceAlertService.checkAlerts(...) verifica daca produsul e disponibil la sau sub acel pret si afiseaza alerta
+
